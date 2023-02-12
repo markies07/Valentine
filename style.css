@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #ffd8de;
+}
+
+/* FIRST PAGE */
+.first-page {
+  position: relative;
+}
+.bg {
+  width: 100%;
+  height: 102vh;
+  object-fit: cover;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 50px;
+  margin-left: 5vw;
+}
+.cube {
+  font-size: 6vw;
+  margin-bottom: 7vw;
+}
+.text h1 {
+  font-size: 8vw;
+  line-height: 120px;
+}
+.text p {
+  font-size: 1.5vw;
+  margin-top: 50px;
+  font-weight: bold;
+  letter-spacing: 25px;
+  color: rgb(204, 204, 204);
+}
+
+/* SECOND PAGE */
+.second-page {
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  height: 102vh;
+  margin-top: -6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.baby {
+  width: 30vw;
+}
+.sticker {
+  width: 11vw;
+  margin-bottom: 30px;
+}
+
+.header {
+  font-size: 4vw;
+  margin-bottom: 25px;
+}
+
+.first {
+  line-height: 2.5vw;
+  font-size: 2vw;
+  width: 55vw;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+}
+
+.company button {
+  position: relative;
+  width: 320px;
+  height: 70px;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffb4bf;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: grab;
+  margin-top: 60px;
+  border-style: double;
+  border-width: 8px;
+  align-self: center;
+}
+
+.company button::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "I Love You";
+  transition: all 0.5s;
+}
+
+.company button::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "I Love You More";
+  transition: all 0.5s;
+}
+
+.company button:hover::before {
+  top: -60px;
+}
+.company button:hover::after {
+  top: 0;
+}
+.box {
+  margin-top: 50px;
+}
+
+/* THIRD PAGE */
+.third-page {
+  background-color: #ffdbe0;
+  height: 102vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 100px;
+}
+
+.flowers {
+  width: 32vw;
+}
+.box {
+  color: rgb(32, 32, 32);
+  text-align: right;
+}
+
+.icon {
+  font-size: 6vw;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  cursor: grab;
+  position: relative;
+  display: inline-block;
+  height: 100px;
+}
+.tooltip {
+  background-color: #f7f7f7;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px 6px #e6bfbf;
+}
+.caption {
+  font-size: 0.6vw;
+  font-weight: bold;
+  color: #f79faa;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.icon:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+.tooltips {
+  position: absolute;
+  top: 25px;
+  right: 110px;
+  display: flex;
+  gap: 40px;
+  pointer-events: none;
+  cursor: grab;
+}
+
+/* FOURTH PAGE */
+.fourth-page {
+  background-color: rgb(19, 19, 19);
+  height: 102vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.sunflower {
+  width: 32vw;
+}
+
+.text-container {
+  color: rgb(255, 194, 82);
+  position: relative;
+}
+.gif-container {
+  gap: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  position: relative;
+}
+.button {
+  text-align: center;
+  color: black;
+  background-color: rgb(255, 194, 82);
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-style: double;
+  border-width: 8px;
+  font-size: 1vw;
+  font-weight: 700;
+  position: relative;
+  cursor: grab;
+  transition: 0.3s;
+}
+.hover .tool {
+  position: absolute;
+  bottom: -170px;
+  right: 280px;
+  opacity: 0;
+  transition: 0.2s;
+  pointer-events: none;
+  background-color: rgb(255, 194, 82);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 2px #3f3f3f inset;
+}
+.hover:hover .tool {
+  opacity: 1;
+}
+.button:hover {
+  background-color: rgb(255, 206, 115);
+}
+
+/* FIFTH PAGE */
+.fifth-page {
+  background-color: #ffdbe0;
+  height: 102vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.love-container {
+  color: rgb(24, 24, 24);
+  margin-left: 50px;
+  margin-bottom: 420px;
+}
+.love-container h1 {
+  font-size: 5vw;
+}
+.love-container p {
+  font-size: 1.7vw;
+}
+.pic-container {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  display: flex;
+  gap: 30px;
+}
+
+.one img {
+  width: 140px;
+  border-radius: 5px;
+  cursor: grab;
+}
+.two img {
+  width: 400px;
+  border-radius: 5px;
+  object-fit: contain;
+  cursor: grab;
+}
+.three img {
+  border-radius: 5px;
+  width: 150px;
+  cursor: grab;
+}
+.two {
+  align-self: center;
+}
+
+.one,
+.two,
+.three {
+  background-color: #f7f7f7;
+  padding: 18px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #f0d7d7;
+  transition: 0.3s;
+  position: relative;
+  cursor: grab;
+}
+.one,
+.three {
+  padding-bottom: 45px;
+}
+.one:hover,
+.two:hover,
+.three:hover {
+  box-shadow: 1px 1px 5px 5px #d4b6b6;
+  transform: translateY(-15px);
+}
+
+.tag {
+  position: absolute;
+  background-color: #f7f7f7;
+}
+.a {
+  top: -50px;
+  right: 47px;
+  color: #f7a8a8;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.b {
+  top: -50px;
+  right: 177px;
+  color: #f7a8a8;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.c {
+  top: -50px;
+  right: 55px;
+  color: #f7a8a8;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.one:hover .a,
+.two:hover .b,
+.three:hover .c {
+  box-shadow: 1px 1px 5px 5px #e0c7c7;
+  opacity: 1;
+}
